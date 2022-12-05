@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GroceryList/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/components/ListItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/screens/HomeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/screens/ListScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/screens/LoginScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/screens/SignInScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/screens/SignUpScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroceryList/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroceryList/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/GroceryList/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroceryList/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/GroceryList/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroceryList/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/GroceryList/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroceryList/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GroceryList/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="fixed formatting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/GroceryList" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,7 +38,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/School/WebstormProjects/GroceryList/GroceryList/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/School/WebstormProjects/GroceryList/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,8 +58,30 @@
       <option name="presentableId" value="Default" />
       <updated>1670270239714</updated>
       <workItem from="1670270241357" duration="785000" />
-      <workItem from="1670271033115" duration="351000" />
+      <workItem from="1670271033115" duration="1006000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed expo go">
+      <created>1670271428445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670271428445</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed expo go">
+      <created>1670271436620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670271436620</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed formatting">
+      <created>1670271631408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670271631408</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixed expo go" />
+    <MESSAGE value="fixed formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed formatting" />
   </component>
 </project>
