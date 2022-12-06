@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="fixed formatting" />
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="fixed formatting">
+      <change afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +44,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/School/WebstormProjects/GroceryList/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Users\\Sebastian\\WebstormProjects\\GroceryList\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -59,6 +66,7 @@
       <updated>1670270239714</updated>
       <workItem from="1670270241357" duration="785000" />
       <workItem from="1670271033115" duration="1006000" />
+      <workItem from="1670287537830" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -89,9 +97,6 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/app.d.ts" />
-        <option value="$PROJECT_DIR$/groceryList/App.js" />
-        <option value="$PROJECT_DIR$/groceryList/app.d.ts" />
-        <option value="$PROJECT_DIR$/GroceryList/app.d.ts" />
       </list>
     </option>
   </component>
