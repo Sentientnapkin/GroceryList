@@ -4,17 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="fixed formatting">
-      <change afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="sql lite added">
+      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/.checksums" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/data-aspects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/default-layout.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/default-login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/form-builder.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/vision.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/plugins/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/sanity.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sanity/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metro.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/LoginScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/LoginScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/SignInScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignInScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/SignUpScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignUpScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,8 +67,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/School/WebstormProjects/GroceryList/GroceryList",
     "node.js.detected.package.eslint": "true",
@@ -44,7 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "ts.external.directory.path": "C:\\Users\\Sebastian\\WebstormProjects\\GroceryList\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,7 +100,9 @@
       <updated>1670270239714</updated>
       <workItem from="1670270241357" duration="785000" />
       <workItem from="1670271033115" duration="1006000" />
-      <workItem from="1670287537830" duration="1074000" />
+      <workItem from="1670287537830" duration="1098000" />
+      <workItem from="1670379613321" duration="42000" />
+      <workItem from="1670379663716" duration="4937000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -89,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670271631408</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sql lite added">
+      <created>1670294505970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670294505970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +147,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fixed expo go" />
     <MESSAGE value="fixed formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed formatting" />
+    <MESSAGE value="sql lite added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql lite added" />
   </component>
 </project>

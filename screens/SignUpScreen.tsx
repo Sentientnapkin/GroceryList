@@ -1,12 +1,45 @@
 import {ImageBackground, Pressable, Text, TextInput, View} from 'react-native';
-import {useState} from "react";
+import {SetStateAction, useState} from "react";
 import {KeyIcon, EnvelopeIcon, UserIcon} from "react-native-heroicons/outline";
+import useAuth from "../hooks/useAuth";
 
 export default function SignUpScreen() {
+  const {user, loading} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    //if either part of the form isn't filled out
+    //set an error message and exit
+    if (email.length == 0 || password.length == 0 || username.length == 0 || confirmPassword.length == 0) {
+      setError("All text should be filled out.");
+    } else {
+      //otherwise send the todo to our api
+      // (we'll make this next!)
+      await fetch("/api/user", {
+        method: "POST",
+        body: JSON.stringify({
+          password: password,
+          email: email,
+          userName: username,
+        }),
+      }).catch((err) => {
+        console.log(err);
+        setError("Error signing up.");
+      });
+      // await fetchTodos(); //(we'll add this later)
+      // Clear all inputs after the user is sent to Sanity
+      // setEmail("");
+      // setError("");
+      // setPassword("");
+      // setConfirmPassword("");
+      // setUsername("");
+    }
+  }
 
   return (
       <ImageBackground
@@ -78,7 +111,7 @@ export default function SignUpScreen() {
             />
           </View>
 
-          <Pressable className={"bg-green-600 p-4 rounded-full w-4/5 mb-4"} >
+          <Pressable className={"bg-green-600 p-4 rounded-full w-4/5 mb-4"} onPress={handleSubmit}>
             <Text className={"text-white text-center text-xl"}>
               Create Account
             </Text>

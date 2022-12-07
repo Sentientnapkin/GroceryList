@@ -5,10 +5,9 @@ import {KeyIcon, EnvelopeIcon} from "react-native-heroicons/outline";
 import {useNavigation} from "@react-navigation/native";
 
 export default function SignInScreen() {
-  // @ts-ignore
   const [email, setEmail] = useState("");
-  // @ts-ignore
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigation = useNavigation();
 
   return (
