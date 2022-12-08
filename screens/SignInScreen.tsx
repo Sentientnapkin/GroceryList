@@ -3,7 +3,10 @@ import {SafeAreaView} from "react-native-safe-area-context";
 import {useState} from "react";
 import {KeyIcon, EnvelopeIcon} from "react-native-heroicons/outline";
 import {useNavigation} from "@react-navigation/native";
+import {ArrowLeftIcon} from "react-native-heroicons/mini";
+import {Magic} from "@magic-sdk/react-native";
 
+const magic = new Magic('pk_live_F74F88465784B958'); // ✨
 export default function SignInScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,6 +18,12 @@ export default function SignInScreen() {
           className={"flex-1 blur-md"}
           source={{uri: "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"}}>
         <View className={"flex-1"}>
+          <Pressable className={"absolute top-12 left-0 p-4"} onPress={() => {navigation.goBack()}}>
+            <ArrowLeftIcon
+              color={"white"}
+              size={40}
+            />
+          </Pressable>
           <SafeAreaView className={"items-center mt-12 basis-1/6"}>
 
           </SafeAreaView>
@@ -54,7 +63,7 @@ export default function SignInScreen() {
               />
             </View>
 
-            <Pressable className={"bg-green-600 p-4 rounded-full w-4/5 mb-4"}>
+            <Pressable className={"bg-green-600 p-4 rounded-full w-4/5 mb-4"} onPress={() => {magic.auth.loginWithEmailOTP({ email }).catch();}}>
               <Text className={"text-white text-center text-xl"}>
                 Login
               </Text>

@@ -5,18 +5,36 @@ import {useState} from "react";
 import {Bars3Icon, PlusIcon, XMarkIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 import ListItem from "../components/ListItem";
+import client from "../lib/sanity/client";
 
 export default function HomeScreen() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [addListMenuVisible, setAddListMenuVisible] = useState(false);
   const [lists, addNewList] = useState<string[]>([]);
   const [newListName, setNewListName] = useState("");
+  const [error, setError] = useState("");
   const navigation = useNavigation();
 
   const addList = (listName: string) => {
     addNewList([...lists, listName]);
     setAddListMenuVisible(false);
   }
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    addList(newListName);
+    e.preventDefault();
+    //if either part of the form isn't filled out
+    //set an error message and exit
+    if (newListName.length == 0) {
+      setError("Todo text and due date must be filled out.");
+    } else {
+      await client
+        .create({
+          _type: "list",
+          listName: newListName,
+        })
+    }
+  };
 
   return (
       <>
@@ -68,11 +86,7 @@ export default function HomeScreen() {
                   />
                 </View>
                 <Pressable
-                  onPress={() => {
-                    addList(newListName);
-                    setNewListName("");
-                    setAddListMenuVisible(false);
-                  }}
+                  onPress={handleSubmit}
                   className={"rounded-lg py-4 px-6 bg-green-600 mt-12"}>
                   <Text className={"text-white text-lg"}>
                     Add

@@ -5,35 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="sql lite added">
-      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/.checksums" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/data-aspects.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/default-layout.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/default-login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/form-builder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/config/@sanity/vision.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/plugins/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/sanity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/static/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useAuth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sanity/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metro.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/sanity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/schemas/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sanity/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanity/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/LoginScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/LoginScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/SignInScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignInScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/SignUpScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignUpScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +37,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -79,7 +64,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "JavaScript.Libraries",
-    "ts.external.directory.path": "C:\\Users\\Sebastian\\WebstormProjects\\GroceryList\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/School/WebstormProjects/GroceryList/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
