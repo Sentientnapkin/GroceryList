@@ -1,7 +1,6 @@
 import {ImageBackground, Pressable, Text, TextInput, View} from 'react-native';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {KeyIcon, EnvelopeIcon, UserIcon} from "react-native-heroicons/outline";
-import useAuth from "../hooks/useAuth";
 import {ArrowLeftIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 import {Magic} from "@magic-sdk/react-native";
@@ -11,6 +10,15 @@ export default function SignUpScreen() {
   const isLoggedIn = magic.user.isLoggedIn();
   const [email, setEmail] = useState("");
   const navigation = useNavigation();
+
+  // useEffect(() => {
+  //   // @ts-ignore
+  //   if(isLoggedIn) {
+  //     // @ts-ignore
+  //     navigation.navigate("Home");
+  //   }
+  // });
+
 
   return (
       <ImageBackground

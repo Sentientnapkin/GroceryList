@@ -8,5 +8,17 @@ export default {
             title: 'List Name',
             type: 'string',
         },
+        {
+            name: 'items',
+            title: 'Items',
+            type: 'array',
+            of: [{type: 'string'}]
+        },
+        {
+            name: 'allowed users',
+            title: 'Allowed Users',
+            type: 'array',
+            of: [{type: 'string'}]
+        }
     ]
 }

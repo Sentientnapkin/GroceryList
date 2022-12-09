@@ -6,7 +6,9 @@ import {Bars3Icon, PlusIcon, XMarkIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 import ListItem from "../components/ListItem";
 import client from "../lib/sanity/client";
+import {Magic} from "@magic-sdk/react-native";
 
+const magic = new Magic('pk_live_F74F88465784B958'); // ✨
 export default function HomeScreen() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [addListMenuVisible, setAddListMenuVisible] = useState(false);
@@ -50,6 +52,15 @@ export default function HomeScreen() {
                   <Text className={"text-2xl mt-12"}>
                     Menu
                   </Text>
+                  <Pressable
+                      className={"p-3"}
+                      onPress={() => {
+                          magic.user.logout();
+                      }}>
+                      <Text>
+                          Sign Out
+                      </Text>
+                  </Pressable>
                   <Pressable
                       className={"p-3"}
                       onPress={() => {
