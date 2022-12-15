@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="sanity and magic working">
-      <change afterPath="$PROJECT_DIR$/components/Item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Trie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/schemas/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/schemas/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/ListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ListScreen.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="Functioning Before Presentation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +78,7 @@
       <workItem from="1670623052578" duration="34000" />
       <workItem from="1670623093340" duration="10891000" />
       <workItem from="1670972470053" duration="17340000" />
-      <workItem from="1671053317837" duration="11505000" />
+      <workItem from="1671053317837" duration="11919000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -130,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670527362342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Functioning Before Presentation">
+      <created>1671066082820</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671066082821</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +139,7 @@
     <MESSAGE value="fixed formatting" />
     <MESSAGE value="sql lite added" />
     <MESSAGE value="sanity and magic working" />
-    <option name="LAST_COMMIT_MESSAGE" value="sanity and magic working" />
+    <MESSAGE value="Functioning Before Presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functioning Before Presentation" />
   </component>
 </project>
