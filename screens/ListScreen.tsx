@@ -15,7 +15,7 @@ export default function ListScreen({route}: { route: any }) {
   const [menuVisible, setMenuVisible] = useState(false);
   const [addItemMenuVisible, setAddItemMenuVisible] = useState(false);
   const [items, setItems] = useState(listItems);
-  const [newItemName, setNewItemName] = useState("");
+  let [newItemName, setNewItemName] = useState("");
   const [error, setError] = useState("");
   const [itemToDelete, setItemToDelete] = useState("");
   const [suggestions, setSuggestions] = useState<string[]>([]);
@@ -152,7 +152,7 @@ export default function ListScreen({route}: { route: any }) {
                           className={""}
                           onPress={() => {
                             setNewItemName(item);
-                            console.log(newItemName)
+                            newItemName=item;
                             // @ts-ignore
                             handleSubmit().then(() => {
                               console.log("autocompleted");

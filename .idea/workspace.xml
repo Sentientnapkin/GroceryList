@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="Functioning Before Presentation" />
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="Functioning Before Presentation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/ListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ListScreen.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +81,7 @@
       <workItem from="1670623052578" duration="34000" />
       <workItem from="1670623093340" duration="10891000" />
       <workItem from="1670972470053" duration="17340000" />
-      <workItem from="1671053317837" duration="11919000" />
+      <workItem from="1671053317837" duration="14309000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671066082821</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Functioning Before Presentation">
+      <created>1671066358680</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671066358680</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
