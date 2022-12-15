@@ -15,7 +15,7 @@ export default {
             of: [{type: 'string'}]
         },
         {
-            name: 'allowed users',
+            name: 'allowedUsers',
             title: 'Allowed Users',
             type: 'array',
             of: [{type: 'string'}]

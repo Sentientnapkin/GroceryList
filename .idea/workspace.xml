@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="sql lite added">
-      <change afterPath="$PROJECT_DIR$/api/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grocery-database/schemas/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="sanity and magic working">
+      <change afterPath="$PROJECT_DIR$/components/Item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Trie.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/sanity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/item.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/schemas/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/schemas/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery-database/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/schemas/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery-database/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sanity/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanity/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery-database/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery-database/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/SignUpScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignUpScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/ListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ListScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,30 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/School/WebstormProjects/GroceryList/GroceryList",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "JavaScript.Libraries",
-    "ts.external.directory.path": "/Users/School/WebstormProjects/GroceryList/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/School/WebstormProjects/GroceryList/GroceryList&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/School/WebstormProjects/GroceryList/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GroceryList" />
       <recent name="$PROJECT_DIR$/groceryList" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,6 +89,11 @@
       <workItem from="1670287537830" duration="1098000" />
       <workItem from="1670379613321" duration="42000" />
       <workItem from="1670379663716" duration="4937000" />
+      <workItem from="1670555245408" duration="1890000" />
+      <workItem from="1670623052578" duration="34000" />
+      <workItem from="1670623093340" duration="10891000" />
+      <workItem from="1670972470053" duration="17340000" />
+      <workItem from="1671053317837" duration="11505000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -117,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670294505970</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sanity and magic working">
+      <created>1670527362342</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670527362342</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +146,7 @@
     <MESSAGE value="fixed expo go" />
     <MESSAGE value="fixed formatting" />
     <MESSAGE value="sql lite added" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql lite added" />
+    <MESSAGE value="sanity and magic working" />
+    <option name="LAST_COMMIT_MESSAGE" value="sanity and magic working" />
   </component>
 </project>

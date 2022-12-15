@@ -1,42 +1,72 @@
 import {FlatList, ImageBackground, Pressable, Text, TextInput, View} from 'react-native';
 import Modal from "react-native-modal";
 import {SafeAreaView} from "react-native-safe-area-context";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Bars3Icon, PlusIcon, XMarkIcon} from "react-native-heroicons/mini";
 import {useNavigation} from "@react-navigation/native";
 import ListItem from "../components/ListItem";
 import client from "../lib/sanity/client";
-import {Magic} from "@magic-sdk/react-native";
+import sanityClient from "../lib/sanity/client";
 
-const magic = new Magic('pk_live_F74F88465784B958'); // ✨
 export default function HomeScreen() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [addListMenuVisible, setAddListMenuVisible] = useState(false);
-  const [lists, addNewList] = useState<string[]>([]);
+  const [lists, setLists] = useState([]);
   const [newListName, setNewListName] = useState("");
   const [error, setError] = useState("");
+  const [listIdToDelete, setListIdToDelete] = useState("");
   const navigation = useNavigation();
+  const { v4: uuid } = require('uuid');
 
-  const addList = (listName: string) => {
-    addNewList([...lists, listName]);
-    setAddListMenuVisible(false);
+  const changeListIdToDelete = (id: string) => {
+    setListIdToDelete(id);
+    // @ts-ignore
+    handleDelete()
+      .then(() => {
+        console.log("deleted");
+      })
+      .catch(console.error);
   }
 
+  useEffect(() => {
+    sanityClient.fetch(`
+    *[_type == "list"] {
+      ...,
+    }`).then((data) => {
+      setLists(data);
+    }).catch(console.error);
+  });
+
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    addList(newListName);
+    setAddListMenuVisible(false);
     e.preventDefault();
     //if either part of the form isn't filled out
     //set an error message and exit
     if (newListName.length == 0) {
-      setError("Todo text and due date must be filled out.");
+      setError("List name must be filled out.");
     } else {
       await client
         .create({
           _type: "list",
           listName: newListName,
-        })
+          allowedUsers: [],
+          items: [],
+          _id: uuid
+        }).then((res) => {
+          console.log(res);
+        }).catch(console.error);
     }
+    setNewListName("");
   };
+
+  const handleDelete = async (e: { preventDefault: () => void }) => {
+    await client
+      .delete({query: `*[_type == "list"][_id=="${listIdToDelete}"]`})
+      .then((res) => {
+        console.log(res);
+      })
+      .catch(console.error);
+  }
 
   return (
       <>
@@ -55,7 +85,7 @@ export default function HomeScreen() {
                   <Pressable
                       className={"p-3"}
                       onPress={() => {
-                          magic.user.logout();
+
                       }}>
                       <Text>
                           Sign Out
@@ -82,8 +112,8 @@ export default function HomeScreen() {
                animationOut="slideOutDown">
           <View className={"flex-1"}>
             <View className={"flex-1"}>
-              <Pressable className={"basis-1/3"} onPress={() => setAddListMenuVisible(false)}/>
-              <View className={"bg-white basis-2/3 items-center"}>
+              <Pressable className={"basis-1/6"} onPress={() => setAddListMenuVisible(false)}/>
+              <View className={"bg-white basis-5/6 items-center"}>
                 <Text className={"text-4xl mt-12"}>
                   Add List
                 </Text>
@@ -134,9 +164,18 @@ export default function HomeScreen() {
             <View className={"flex-1"}>
               <FlatList
                   data={lists}
-                  renderItem={({item}) => {
+                  renderItem={({item: {_id, items, listName}}) => {
                     return (
-                      <ListItem listName={item} onPress={()=> alert("List has been pressed")}/>
+                      // @ts-ignore
+                      <ListItem listName={listName}
+                                listId={_id}
+                                onPress={
+                                  () => {
+                                    //@ts-ignore
+                                    navigation.navigate("List", {listName: listName, listItems: items, listId: _id})
+                                  }
+                                }
+                                setId={changeListIdToDelete}/>
                     );
                   }}
               />
