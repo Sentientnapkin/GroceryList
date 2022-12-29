@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="16d4d299-e88f-43cb-b81d-37711b79d96e" name="Changes" comment="Functioning Before Presentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/ListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ListScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Trie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Trie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/LoginScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/LoginScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/SignUpScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/SignUpScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,9 @@
       <workItem from="1670623052578" duration="34000" />
       <workItem from="1670623093340" duration="10891000" />
       <workItem from="1670972470053" duration="17340000" />
-      <workItem from="1671053317837" duration="14309000" />
+      <workItem from="1671053317837" duration="14322000" />
+      <workItem from="1671069248505" duration="1236000" />
+      <workItem from="1671216479049" duration="1038000" />
     </task>
     <task id="LOCAL-00001" summary="fixed expo go">
       <created>1670271428445</created>
@@ -132,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671066358680</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Functioning Before Presentation">
+      <created>1671069058336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671069058336</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

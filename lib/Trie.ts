@@ -69,7 +69,8 @@ class Trie{
       this.autoCompleteArray.push(str);
     }
     for(let i = 0;i<26;i++){
-      this.addToAutocompleteArrayRec(str + String.fromCharCode(i + 'a'.charCodeAt(0)), current.children[i]);
+      this.addToAutocompleteArrayRec(str +
+        String.fromCharCode(i + 'a'.charCodeAt(0)), current.children[i]);
     }
   }
 

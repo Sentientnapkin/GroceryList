@@ -41,6 +41,7 @@ export default function LoginScreen() {
           </Text>
         </Pressable>
 
+        {/*}
         <Pressable
             className={"border-white border-2 p-3 rounded-full m-2 w-4/5"}
             onPress={() => {
@@ -51,6 +52,7 @@ export default function LoginScreen() {
             To Home (testing)
           </Text>
         </Pressable>
+        */}
       </View>
     </SafeAreaView>
   </ImageBackground>);

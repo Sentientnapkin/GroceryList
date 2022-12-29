@@ -10,6 +10,9 @@ export default function SignUpScreen() {
   const isLoggedIn = magic.user.isLoggedIn();
   const [email, setEmail] = useState("");
   const navigation = useNavigation();
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   // useEffect(() => {
   //   // @ts-ignore
@@ -48,7 +51,6 @@ export default function SignUpScreen() {
             />
           </View>
 
-          {/**
           <View className={"flex-row items-center justify-between space-x-4 bg-gray-200 rounded-full p-4 w-4/5 mb-4"}>
             <TextInput
                 className={""}
@@ -96,7 +98,6 @@ export default function SignUpScreen() {
                 className={""}
             />
           </View>
-           **/}
 
           <Pressable className={"bg-green-600 p-4 rounded-full w-4/5 mb-4"} onPress={() => {magic.auth.loginWithEmailOTP({ email }).catch();}}>
             <Text className={"text-white text-center text-xl"}>
